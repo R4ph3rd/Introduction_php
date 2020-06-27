@@ -1,0 +1,1 @@
+<img src="./images/histoire.jpg" class="mid_screen">

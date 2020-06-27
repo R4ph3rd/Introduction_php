@@ -1,0 +1,1 @@
+<img src="./images/baguettes_trad.jpg" class="baguette">
