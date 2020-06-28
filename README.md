@@ -178,3 +178,41 @@ if ($_GET['page'] == 'baguettes'){
     include('location.php');
 }
 ```
+
+
+#### POST
+La méthode ``_POST`` envoie des données non visibles, et est donc plutôt utilisée dans un formulaire :
+```php
+<form action="script_process_form.php" method="post">
+  <p>
+    <label>Type de baguettes</label>
+    <input type="text" name="type" value="" placeholder="Paysanne, flûte...">
+  </p>
+
+  <input type="submit" value="Valider">
+</form>
+```
+
+Pour récupérer les données, on passe par ``$_POST['donnee']`` :
+```php
+echo 'Le client souhaite acheter des ' .$_POST['type']. '.' ;
+```
+
+
+### Transmettre des données entre différentes pages
+Pour stocker des variables entre différentes pages, il faut ouvrir une **session** dans chacune d'elles :
+```php
+session_start(); // ouverture de la session sur la page
+
+$_SESSION['nombre_de_baguettes'] = 40 ; // création d'une variable de session
+
+echo $_SESSION['nombre_de_baguettes'] ; // affichage d'une variable de session
+```
+Pour fermer une session, il faut utiliser la fonction ``session_destroy()``.
+On se servira d'une session notamment pour enregistrer l'authentification d'un utilisateur dans un service.
+
+La fonction ``header()`` permet de refresh l'entête de la page. On l'utilise surtout pour créer une redirection à la fin d'un script.
+```php
+header('location:index.php');
+exit();
+```
