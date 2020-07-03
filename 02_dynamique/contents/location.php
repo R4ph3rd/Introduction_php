@@ -1,1 +1,3 @@
-<img src="./images/location.jpg" class="fullscreen">
+<section id="location">
+<div class="content"></div>
+</section>

@@ -4,7 +4,7 @@
     margin:0;
     list-style: none;
     text-decoration: none;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
 }
 
 header{
@@ -20,7 +20,7 @@ header .logo {
     width: 44px;
     height:44px;
     border-radius:40px;
-    background-color: rgb(231, 230, 230);
+    background-color: indianred;
 }
 
 header ul {
@@ -43,28 +43,30 @@ header ul li a {
 
 /* footer */
 footer{
-    /* margin-top:80px; */
     display:grid;
-    justify-items: center;
-    /* align-items: center; */
-    grid-template-columns: auto 30% auto;
+    justify-items: start;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap:8%;
     padding: 70px 50px;
-    background-color: #fff;
+    background-color: #1D1D21;
     box-shadow: 0 -3px 20px rgba(0,0,0,.12);
 }
 
+footer * { color: white}
+
 footer .logo {
     align-self:center;  
-    width: 20%;
+    width: 100%;
     height:200px;
     border-radius:12px;
-    background-color: rgb(231, 230, 230);
+    background-color: indianred;
 }
 
 footer h4 {
     text-transform: uppercase;
     font-size:16px;
     margin-bottom:20px;
+    color:indianred;
 }
 
 footer div > .socials {
@@ -91,4 +93,90 @@ body > section {
     width:50%;
     object-fit:contain;
     margin:auto 25%;
+}
+
+
+.content {
+    width:70%;
+    max-width:1200px;
+    margin:0 auto ;
+    min-height: calc(100vh - 80px);
+}
+
+h1{
+    color: indianred;
+}
+
+h2 {
+    color: indianred;
+}
+
+
+#baguettes{
+    background-image: url('./images/baguettes_trad.jpg');
+}
+
+#histoire{
+    background-image: url('./images/histoire.jpg');
+}
+
+#location{
+    background-image: url('./images/histoire.jpg');
+}
+
+/* ////////////////////////////////////////////// */
+.cta{
+    width: max-content;
+    display: inline-block;
+}
+
+.cta.outlined div{
+    color: indianred;
+    border: solid 2px indianred;
+    background-color: unset !important;
+    box-shadow: unset;
+}
+
+.cta div{
+    width: max-content;
+    padding:20px 50px;
+    text-transform: uppercase;
+    font-weight:500;
+    text-align: center;
+    background-color: indianred;
+    color:white;
+    box-shadow: 0 4px 12px indianred;
+    border-radius: 8px;
+}
+
+.active{
+    color: indianred;
+}
+
+.loader{
+    width:100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader::before{
+    content: ' ';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:-50%;
+
+    background: linear-gradient(to right, rgb(243, 243, 243) 35%, rgb(248, 248, 248), rgb(243, 243, 243) 75%);
+    animation: loading infinite 1.5s;
+}
+
+@keyframes loading{
+    from{
+        left:0;
+    }
+    to{
+        left:100%;
+    }
 }

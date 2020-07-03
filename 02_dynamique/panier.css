@@ -1,0 +1,52 @@
+#panier h2 {
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:50px;
+}
+
+.list_panier {
+    display:flex;
+    flex-direction: column;
+    /* max-width:60%; */
+}
+
+.list_panier li {
+    position:relative;
+    width:100%;
+    height: max-content;
+    padding: 20px 10px;
+
+    display: grid;
+    grid-template-columns: 20% auto 180px;
+    grid-column-gap: 20px;
+
+    background-color: #FFF;
+    border:1px solid indianred;
+    border-radius: 8px;
+    /* box-shadow: 0 3px 8px rgba(0,0,0,.12); */
+}
+
+.list_panier li .img{
+    width:100%;
+    height:100%;
+    border-radius:2px;
+    background-color: rgb(243, 243, 243);
+}
+
+.list_panier .prix {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list_panier .trash {
+    width:24px;
+    height:24px;
+    border-radius: 4px;
+    background-color: #3A393E;
+}
+
+.list_panier + .cta{
+    margin-top:70px;
+    margin-left:83%;
+}

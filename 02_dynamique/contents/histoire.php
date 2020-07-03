@@ -1,1 +1,3 @@
-<img src="./images/histoire.jpg" class="mid_screen">
+<section id="histoire">
+<div class="content"></div>
+</section>
