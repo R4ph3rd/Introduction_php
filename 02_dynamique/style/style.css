@@ -113,15 +113,15 @@ h2 {
 
 
 #baguettes{
-    background-image: url('./images/baguettes_trad.jpg');
+    background-image: url('../images/baguettes_trad.jpg');
 }
 
 #histoire{
-    background-image: url('./images/histoire.jpg');
+    background-image: url('../images/histoire.jpg');
 }
 
 #location{
-    background-image: url('./images/histoire.jpg');
+    background-image: url('../images/location.jpg');
 }
 
 /* ////////////////////////////////////////////// */

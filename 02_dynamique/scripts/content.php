@@ -1,19 +1,19 @@
 <?php
     $page = $_GET['page'];
-    // echo $page ;
+    
     if ($page == 'baguettes'){
         include('./contents/baguettes.php');
     } 
     if ($page == 'histoire'){
         include('./contents/histoire.php');
     }
-    if ($page = 'panier'){
+    if ($page == 'panier'){
         include('./contents/panier.php');
     } 
-    if ($page = 'location'){
+    if ($page == 'location'){
         include('./contents/location.php');
     }
-    if ($page = 'achat'){
+    if ($page == 'achat'){
         // include('./contents/achat.php');
     } 
 ?>

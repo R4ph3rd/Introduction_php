@@ -1,11 +1,11 @@
 <li>
     <div class="img loader"></div>
     <div class="list">
-        <h3>Mon article de pain</h3>
-        <p>x 4</p>
+        <h3><?php echo $panier['Article']; ?></h3>
+        <p>x <?php echo $panier['Nombre']; ?></p>
     </div>
     <div class="prix">
-        <p>2,85 €</p>
-        <div class="trash"></div>
+        <p><?php echo $panier['Prix']; ?></p>
+        <div class="trash"><img src="./images/trash.png" alt="trash"></div>
     </div>
 </li>

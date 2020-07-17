@@ -1,3 +1,8 @@
+
+#panier{
+    margin-top:100px;
+}
+
 #panier h2 {
     font-size:32px;
     font-weight:700;
@@ -43,7 +48,11 @@
     width:24px;
     height:24px;
     border-radius: 4px;
-    background-color: #3A393E;
+    /* background-color: #3A393E; */
+}
+
+.trash:hover{
+    cursor: pointer;
 }
 
 .list_panier + .cta{
