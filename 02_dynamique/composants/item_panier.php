@@ -6,6 +6,6 @@
     </div>
     <div class="prix">
         <p><?php echo $panier['Prix']; ?></p>
-        <div class="trash"><img src="./images/trash.png" alt="trash"></div>
+        <button class="trash" action="../scripts/delete_item.php"><img src="./images/trash.png" alt="trash"></button>
     </div>
 </li>

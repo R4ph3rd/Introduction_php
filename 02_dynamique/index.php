@@ -14,6 +14,9 @@
 
     <!-- <section class="content"> -->
         <?php 
+            session_start();
+            $_SESSION['panier'] = array();
+
             include('./scripts/connect.php');
             include('./scripts/content.php');
         ?>

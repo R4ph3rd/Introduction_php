@@ -113,7 +113,8 @@ h2 {
 
 
 #baguettes{
-    background-image: url('../images/baguettes_trad.jpg');
+    /* background-image: url('../images/baguettes_trad.jpg'); */
+    margin: 50px 0;
 }
 
 #histoire{
@@ -179,4 +180,63 @@ h2 {
     to{
         left:100%;
     }
+}
+
+
+
+/************* PAIN ITEM **************/
+
+#baguettes ul{
+    margin-left:auto;
+    margin-right:auto;
+    width:80%
+}
+
+.pain_item{
+    width:100%;
+    height:max-content;
+    display:grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap:50px;
+    margin-bottom:30px;
+    padding: 10px 20px;
+
+    background: linear-gradient(to right, #f0f0f0, white);
+    border-radius:12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.12);
+}
+
+.pain_item img{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    min-height:200px;
+    border-radius:12px;
+
+    box-shadow: 0 0 8px rgba(0,0,0,.12);
+}
+
+.pain_item .desc{
+    padding:10px 0 ;
+}
+
+.pain_item .desc h3{
+    margin-bottom:30px;
+}
+
+.pain_item .desc .qté{
+    margin-top:50px;
+    color:gray;
+    font-style: italic;
+}
+
+.pain_item button{
+    display:block;
+    margin-left:auto;
+}
+
+.pain_item button:hover { cursor: pointer }
+.pain_item button div{
+    padding:15px 20px;
+
 }

@@ -59,3 +59,8 @@
     margin-top:70px;
     margin-left:83%;
 }
+
+button{
+    border:none;
+    background: unset;
+}
